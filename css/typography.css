@@ -1,0 +1,265 @@
+/* -------- MEDIA QUERY -------- */
+@media (max-width: 650px){
+	#reading-post h2:before, h2:after{
+		display: none;
+	}
+
+	#reading-post #blurb img{
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+
+	#reading-post #blurb p{
+		clear: left;
+	}
+}
+
+@media (max-width: 500px){
+	#social{
+		flex-direction: column;
+	}
+	#social .button{
+		width: 80%;
+	}
+}
+
+/* ----------- GO BACK ----------- */
+#return{
+	font-size: 0.7em;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+#return::before{
+	content: "‹ ";
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#return a{
+	color: #000;
+	transition: 1s;
+}
+
+#return a:hover{
+	color: #CAE1D7;
+	transition-timing-function: ease-in-out;
+}
+
+
+
+
+/* ----------- HEADERS ----------- */
+#blog-body h2:before, #blog-body h2:after{
+	display: none;
+}
+
+#blog-body h1, #blog-body h2, #blog-body h3{
+	font-family: 'Playfair Display', serif;
+}
+
+#blog-body h1{
+	font-size: 48px;
+	font-weight: 200;
+}
+#blog-body h2{
+	font: 32px 'Open Sans',sans-serif;
+	text-align: left;
+	font-variant: normal;
+	font-weight: bold;
+}
+#blog-body h3{
+	font-size: 24px;
+	font-variant: small-caps;
+}
+
+
+/* ----------- IMAGE ----------- */
+#blog-body img{
+	border-radius: 0;
+	margin: 0 auto;
+	width: 90%;
+	float: none;
+	display: block;
+}
+#caption{
+	font: italic 0.9em 'Quicksand',sans-serif;
+	color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+}
+
+
+/* ----------- LINK ----------- */
+#blog-body a:hover{
+	text-decoration: underline;
+}
+
+/* ----------- TEXT DECORATION ----------- */
+#blog-body i, #blog-body em{
+	color: rgba(0, 0, 0, 0.7);
+}
+
+#blog-body b, #blog-body strong{
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+#blog-body u{
+	padding: 0 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+
+/* ----------- BLOCKQUOTE ----------- */
+blockquote{
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.7);
+	border-left: 10px double rgba(236, 253, 237, 1);
+	padding: 10px 0 10px 5px;
+}
+
+/* ----------- LIST TYPES ----------- */
+#blog-body ul, ol{
+	background-color: transparent;
+	list-style-position: inside;
+	margin-left: 5px;
+	padding: 5px;
+	display: block;
+}
+
+#blog-body li{
+	background-color: transparent;
+	text-align: left;
+}
+#blog-body li:hover{
+	box-shadow: none;
+}
+
+#blog-body ul, #blog-body ul li{
+	list-style-type: square;
+	width: auto;
+}
+
+
+#blog-body ol, #blog-body ol li{
+	list-style-type: lower-roman;
+}
+
+
+/* ----------- PREFORMATTED TEXT ----------- */
+pre{
+	font-size: 1.1em;
+	background-color: rgba(198, 198, 198, 0.5);
+	padding: 5px;
+}
+
+pre#multi{
+	line-height: 20px;
+	padding: 10px 10px 10px 20px;
+	margin: 15px 5px;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+}
+
+
+/* ----------- COLOUR BLOCKS ----------- */
+#color-blocks{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+}
+#color-blocks p{
+	text-align: center;
+	margin-top: 40%;
+}
+
+.ctheory{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+#et{
+	color: #FFF;
+	background-color: #1B2D1D;
+}
+#to{
+	background-color: #CAE1D7;
+}
+#tre{
+	background-color: #8AABB2;
+}
+
+
+/* ----------- BUTTONS ----------- */
+.buttons{
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #8AABB2;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 0 auto;
+	width: 50%;
+}
+#default{
+	color: #FFF;
+	transition: 1.5s;
+}
+#default:hover{
+	color: #000;
+	background-color: rgba(225, 239, 222, 0.5);
+	transition-timing-function: ease-out;
+}
+
+#outline{
+	border: 2px solid #8AABB2;
+	background-color: #FFF;
+	transition: 1.5s;
+}
+#outline:hover{
+	color: #000;
+	border: 2px solid transparent;
+	background-color: rgba(225, 239, 222, 0.5);
+	transition-timing-function: ease-out;
+}
+
+#clear{
+	font-weight: bold;
+	letter-spacing: 1px;
+	background-color: transparent;
+	transition: 1.5s;
+}
+#clear:hover{
+	font-weight: initial;
+	background-color: rgba(225, 239, 222, 0.5);
+	transition-timing-function: ease-out;
+}
+
+
+/* ----------- PICTURES: AVATARS ----------- */
+#avatar-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+#avatar-box img{
+	border-radius: 15px;
+	width: 15%;
+}
+
+
+/* ----------- BLOG STYLE ----------- */
+
+#sidebar{
+	display: none;
+}
+#content{
+	grid-area: 2/1/5/5;
+}
+#footer{
+	border: 1px solid aqua;
+	padding: 55px;
+}
+

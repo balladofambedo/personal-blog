@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* ============================
+*       GLOBAL CATCH-ALLS
+*  ============================
+*/
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	color: #CAE1D7;
+	text-decoration: none;
+}
+.credit{
+	color: #404040;
+	font-size: 10px;
+	font-style: italic;
+	text-align: center;
+}
+
+/* ============================
+*       TEMPORARY CATCH-ALLS
+*  ============================
+*/
+.grid-boxes{
+	border: 1px solid #C0C4B5;
+}
+
+
+/* ============================
+*         BLOG CONTAINER
+*  ============================
+*/
+#container{
+	/*border: 1px solid #E5E5E5;*/
+	margin: 0 auto;
+	width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 15px;
+}
+
+
+/* ============================
+*            HEADER
+*  ============================
+*/
+header{
+	background-color: #E1EFDE;
+	background-image: url('img/mountain-crop.jpg');
+	background-size: cover;
+	grid-area: 1/1/2/5;
+}
+
+header h1{
+	color: #30606C;
+	font: 48px 'Playfair Display',serif;							/* font: font-style font-variant font-weight font-size font-family; */
+	text-align: center;
+}
+
+/* ============================
+*            SIDEBAR
+*  ============================
+*/
+#sidebar{
+	border: 1px solid #C0C4B5;
+	grid-area: 2/1/4/2;
+	align-self: center;
+}
+#sidebar img{
+	border-radius: 25px;
+	margin: 20px auto 0;
+	display: block;
+}
+
+.sb-flair{
+	background-color: rgba(225, 239, 222, 0.5);
+	border: 0 dotted #ACE31A;
+	height: 50px;
+}
+h2{
+	text-align: center;
+}
+
+/* >--- SIDEBAR NAVIGATION ---< */
+
+ul, li{
+	border: 0 solid #1DD1D1;
+	list-style-type: none;
+}
+ul{
+	margin: 0 auto;
+	padding: 0;
+	width: 75%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+li{
+	font: 0.9em 'Quicksand',sans-serif;
+	text-align: center;
+	background-color: #1B2D1D;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+li#active{
+	background-color: rgba(225, 239, 222, 0.5);
+}
+li a{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+li:hover{
+	box-shadow: 5px 5px 3px -3px rgba(47,55,32,0.37);
+}
+li a:hover{
+	color: #FFF;
+}
+
+/* ============================
+*             CONTENT
+*  ============================
+*/
+#content{
+	grid-area: 2/2/4/5;
+	display: grid;
+}
+
+/* >--- BLOG CARDS CONTAINER ---< */
+.nested-grids{
+	margin: 20px 10px 20px 0;
+	display: flex;
+	flex-flow: row wrap;
+	grid-gap: 20px;
+	justify-content: center;
+}
+
+/* >--- BLOG POST CARDS CONTENT ---< */
+.card{
+	padding: 10px;
+	border: 1px solid #DFDFDD;
+	box-shadow: 15px 15px 3px -3px rgba(47,55,32,0.37);
+	width: 210px;
+	height: auto;
+}
+.card .filled{
+	height: 440px;
+}
+.card h1{
+	font: 1.65em 'Quicksand',sans-serif;
+	text-align: center;
+}
+.card h1.post-top{
+	color: #FFF;
+	background-color: #1B2D1D;
+	padding: 5px;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.card h1#special::before{
+	content: "🎉 ";
+}
+.card h1#special::after{
+	content: " 🎉";
+}
+.card p{
+	font-size: 0.9em;
+	text-align: justify;
+}
+.card p.credit{
+	color: #404040;
+	font-size: 10px;
+	font-style: italic;
+	text-align: center;
+}
+.card div.spacer{
+	padding: 3.5px;
+}
+.card a:hover{
+	text-decoration: underline;
+}
+.card span{
+	background-color: #8AABB2;
+}
+.card span a:hover{
+	color: #FFF;
+}
+.card img{
+	margin: 60px auto 0;
+	display: block;
+	clear: both;
+}
+.card .tags{
+	text-transform: lowercase;
+	border: 0;
+	font-size: 0.9em;
+	padding: 5px 10px;
+	margin-left: 5px;
+	float: left;
+}
+.card .date{
+	font-size: 0.9em;
+	padding: 5px 10px;
+	margin-right: 10px;
+	float: right;
+}
+.card p{
+	clear: both;
+}
+.read-more{
+	color: #FFF;
+	text-align: center;
+	background-color: #1B2D1D;
+	padding: 5px;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+/* ============================
+*             FOOTER
+*  ============================
+*/
+footer{
+	background-color: rgba(225, 239, 222, 0.5);
+	grid-area: 5/1/5/5;
+}
+
+footer p{
+	color: #30606C;
+	font: 0.6em 'Quicksand',sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}

@@ -1,0 +1,27 @@
+/* ============================
+*         MEDIA QUERIES
+*  ============================
+*/
+
+@media (max-width: 1050px){
+	#container{
+		display: flex;
+		flex-flow: column wrap;
+		width: auto;
+	}
+
+	#sidebar{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	#sidebar h2, #sidebar img{
+		display: none;
+	}
+	#sidebar ul{
+		padding: 10px;
+		flex-flow: row;
+		grid-gap: 5px;
+		width: auto;
+	}
+}
+
