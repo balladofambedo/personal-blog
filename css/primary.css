@@ -50,7 +50,7 @@ a{
 */
 header{
 	background-color: #E1EFDE;
-	background-image: url('img/mountain-crop.jpg');
+	background-image: url('../img/mountain-crop.jpg');
 	background-size: cover;
 	grid-area: 1/1/2/5;
 }
